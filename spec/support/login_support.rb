@@ -8,6 +8,6 @@ module LoginSupport
   end
 end
 
-RSpec.cofigure do |config|
+RSpec.configure do |config|
   config.include LoginSupport
 end
