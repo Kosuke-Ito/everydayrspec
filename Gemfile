@@ -21,9 +21,7 @@ group :development, :test do
   gem 'capybara'
   gem 'webdrivers'
   gem 'launchy'
-  gem 'shoulda-matchers',
-    git: 'https://github.com/thoughtbot/shoulda-matchers.git',
-    branch: 'rails-5'
+  gem 'shoulda-matchers', '~> 4.0'
   gem 'selenium-webdriver'
 end
 
