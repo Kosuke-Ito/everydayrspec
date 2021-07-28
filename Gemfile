@@ -23,6 +23,8 @@ group :development, :test do
   gem 'launchy'
   gem 'shoulda-matchers', '~> 4.0'
   gem 'selenium-webdriver'
+  gem 'vcr'
+  gem 'webmock'
 end
 
 group :development do
