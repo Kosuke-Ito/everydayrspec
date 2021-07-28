@@ -58,14 +58,6 @@ RSpec.describe Note, type: :model do
         expect(Note.search("first")).to include(note1, note3) 
       end
     end
-  
-    # 一致するデータが1件も見つからないとき
-    context "when no match is found" do
-      # 空のコレクションを返すこと
-      it "returns an empty collection" do
-        expect(Note.search("message")).to be_empty
-        expect(Note.count).to eq 3
-      end
-    end
+
   end
 end
