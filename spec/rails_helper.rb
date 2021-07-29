@@ -61,7 +61,7 @@ RSpec.configure do |config|
   # コントローラスペックで Devise のテストヘルパーを使用する
   config.include Devise::Test::ControllerHelpers, type: :controller
   config.include RequestSpecHelper, type: :request
-  config.include Devise::Test::IntegrationHelpers, type: :feature
+  config.include Devise::Test::IntegrationHelpers, type: :system
 
   Shoulda::Matchers.configure do |config|
     config.integrate do |with|

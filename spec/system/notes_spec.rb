@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.feature "Notes", type: :feature do
+RSpec.describe "Notes", type: :system do
   let(:user) { FactoryBot.create(:user) }
   let(:project) { FactoryBot.create(:project, name: "RSpec tutorial", owner: user) }
 
@@ -16,6 +16,4 @@ RSpec.feature "Notes", type: :feature do
     expect(page).to have_content "My book cover"
     expect(page).to have_content "attachment.jpg (image/jpeg"
   end  
-
-
 end
